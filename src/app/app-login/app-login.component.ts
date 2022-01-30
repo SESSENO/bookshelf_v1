@@ -57,10 +57,12 @@ export class AppLoginComponent {
   resetarCamposLogin() {
     this.formularioLogin.reset();
     console.log("Campo Limpo");
-    this.formularioLogin = new FormGroup({
+    this.formularioLogin = new FormGroup(
+      {
       email: new FormControl(null),
       senha: new FormControl(null),
-    });
+    }
+    );
 
   }
 
